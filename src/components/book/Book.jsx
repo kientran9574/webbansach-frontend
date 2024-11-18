@@ -24,15 +24,15 @@ const Book = () => {
         let images = []
         if (raw.thumbnail) {
             images.push({
-                original: `http://localhost:8082/images/book/${raw.thumbnail}`,
-                thumbnail: `http://localhost:8082/images/book/${raw.thumbnail}`,
+                original: `https://webbansach-backend.onrender.com/images/book/${raw.thumbnail}`,
+                thumbnail: `https://webbansach-backend.onrender.com/images/book/${raw.thumbnail}`,
             })
         }
         if (raw.slider.length > 0) {
             raw.slider.map((item) => {
                 images.push({
-                    original: `http://localhost:8082/images/book/${item}`,
-                    thumbnail: `http://localhost:8082/images/book/${item}`,
+                    original: `https://webbansach-backend.onrender.com/images/book/${item}`,
+                    thumbnail: `https://webbansach-backend.onrender.com/images/book/${item}`,
                 })
             })
         }

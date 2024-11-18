@@ -24,7 +24,7 @@ const HeaderAdmin = () => {
     const isAuthenticated = useSelector(state => state.account.isAuthenticated)
     const user = useSelector(state => state.account.user)
     const [activeMenu, setActiveMenu] = useState("dashboard")
-    const url = `http://localhost:8082/images/avatar/${user?.avatar}`
+    const url = `https://webbansach-backend.onrender.com/images/avatar/${user?.avatar}`
     const dispatch = useDispatch()
 
     useEffect(() => {

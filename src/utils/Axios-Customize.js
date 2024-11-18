@@ -2,7 +2,7 @@ import axios from "axios";
 import { Mutex } from "async-mutex";
 const mutex = new Mutex();
 const instance = axios.create({
-    baseURL: 'http://localhost:8082/',
+    baseURL: 'https://webbansach-backend.onrender.com/',
     withCredentials: true,
 });
 instance.defaults.headers.common = {

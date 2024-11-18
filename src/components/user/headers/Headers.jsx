@@ -12,7 +12,7 @@ import ManagerAccount from "../../account/ManagerAccount";
 const Headers = () => {
     const isAuthenticated = useSelector(state => state.account.isAuthenticated)
     const user = useSelector(state => state.account.user)
-    const url = `http://localhost:8082/images/avatar/${user?.avatar}`
+    const url = `https://webbansach-backend.onrender.com/images/avatar/${user?.avatar}`
     const dispatch = useDispatch()
     const carts = useSelector(state => state.order.cart)
     const navigate = useNavigate()
@@ -70,7 +70,7 @@ const Headers = () => {
 
                     {carts.map((item, index) => (
                         <div className="flex items-center mt-4 pb-3" key={`book-${index + 1}`}>
-                            <img src={`http://localhost:8082/images/book/${item.detail.thumbnail}`} alt="" className="w-[80px] h-[80px] inline-block rounded object-contain" />
+                            <img src={`https://webbansach-backend.onrender.com/images/book/${item.detail.thumbnail}`} alt="" className="w-[80px] h-[80px] inline-block rounded object-contain" />
                             <p className="text-sm font-semibold">{item.detail.mainText}</p>
                             <div className='text-sm font-bold ml-4'>
                                 {new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(item?.detail?.price ?? 0)}

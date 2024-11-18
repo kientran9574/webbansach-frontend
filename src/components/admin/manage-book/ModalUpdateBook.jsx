@@ -41,7 +41,7 @@ const ModalUpdateBook = (props) => {
                 uid: uuidv4(),
                 name: dataUpdateBook.thumbnail,
                 status: 'done',
-                url: `http://localhost:8082/images/book/${dataUpdateBook.thumbnail}`
+                url: `https://webbansach-backend.onrender.com/images/book/${dataUpdateBook.thumbnail}`
             }]
 
             const arrSlider = dataUpdateBook?.slider?.map((item) => {
@@ -49,7 +49,7 @@ const ModalUpdateBook = (props) => {
                     uid: uuidv4(),
                     name: item,
                     status: 'done',
-                    url: `http://localhost:8082/images/book/${item}`
+                    url: `https://webbansach-backend.onrender.com/images/book/${item}`
                 }
             })
             console.log(arrSlider)

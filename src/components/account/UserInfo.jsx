@@ -10,7 +10,7 @@ const UserInfo = () => {
     const user = useSelector(state => state.account.user)
     const tempAvatar = useSelector(state => state.account.tempAvatar);
 
-    const urlAvatar = `http://localhost:8082/images/avatar/${tempAvatar || user?.avatar}`
+    const urlAvatar = `https://webbansach-backend.onrender.com/images/avatar/${tempAvatar || user?.avatar}`
 
     const [userAvatar, setUserAvatar] = useState(user?.avatar ?? "")
     const dispatch = useDispatch()

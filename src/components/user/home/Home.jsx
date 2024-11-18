@@ -218,7 +218,7 @@ const Home = () => {
                                 <>
                                     <div className="shadow-lg w-full h-auto p-4 border border-gray-300 rounded-md cursor-pointer hover:shadow-xl transition-all" onClick={() => handleClickRedirect(item)}>
                                         <div className="w-full h-[200px] rounded-md mb-4">
-                                            <img src={`http://localhost:8082/images/book/${item.thumbnail}`} alt="" className='block w-full h-full object-contain rounded-md' />
+                                            <img src={`https://webbansach-backend.onrender.com/images/book/${item.thumbnail}`} alt="" className='block w-full h-full object-contain rounded-md' />
                                         </div>
                                         <p className='font-bold text-base w-auto h-14 '>{item.mainText}</p>
                                         <span className='text-base font-semibold mt-4 inline-block'>

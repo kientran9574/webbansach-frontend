@@ -5,7 +5,7 @@ import { Image, Upload } from 'antd';
 import moment from 'moment'
 import { v4 as uuidv4 } from 'uuid';
 const ModalViewBook = (props) => {
-    const { openModalViewBook, setOpenModalViewBook, dataViewBook ,setDataViewBook } = props
+    const { openModalViewBook, setOpenModalViewBook, dataViewBook, setDataViewBook } = props
     const [previewOpen, setPreviewOpen] = useState(false);
     const [previewImage, setPreviewImage] = useState('');
     const [previewTitle, setPreviewTitle] = useState('');
@@ -21,7 +21,7 @@ const ModalViewBook = (props) => {
                     uid: uuidv4(),
                     name: dataViewBook.thumbnail,
                     status: "done",
-                    url: `http://localhost:8082/images/book/${dataViewBook.thumbnail}`
+                    url: `https://webbansach-backend.onrender.com/images/book/${dataViewBook.thumbnail}`
                 }
             }
             if (dataViewBook.slider) {
@@ -30,7 +30,7 @@ const ModalViewBook = (props) => {
                         uid: uuidv4(),
                         name: item,
                         status: "done",
-                        url: `http://localhost:8082/images/book/${item}`
+                        url: `https://webbansach-backend.onrender.com/images/book/${item}`
                     })
                 })
             }

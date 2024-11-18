@@ -71,7 +71,7 @@ const Payment = (props) => {
                         const currentBookPrice = item?.detail?.price ?? 0;
                         return (
                             <div className="flex items-center bg-white p-5 rounded mb-10 " key={`book-${index + 1}`}>
-                                <img src={`http://localhost:8082/images/book/${item.detail.thumbnail}`} alt="" className="w-[100px] h-[100px] inline-block rounded object-contain" />
+                                <img src={`https://webbansach-backend.onrender.com/images/book/${item.detail.thumbnail}`} alt="" className="w-[100px] h-[100px] inline-block rounded object-contain" />
                                 <p className="text-sm font-semibold">{item.detail.mainText}</p>
                                 <div className="flex items-center ml-44 ">
                                     <div className='text-sm font-bold'>
